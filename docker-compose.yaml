@@ -38,7 +38,7 @@ services:
       ref.net:
         ipv4_address: 172.20.128.2
     ports:
-      - 25602:8090
+      - 25603:8090
     extends:
       file: common.yaml
       service: common

@@ -3,12 +3,12 @@ version: '2'
 services:
   workspace:
     build: ./Dockerfile.workspace
-    image: ref.workspace2
-    container_name: ref.workspace2
-    hostname: ref.workspace2
+    image: ref.workspace
+    container_name: ref.workspace
+    hostname: ref.workspace
     networks:
       ref.net:
-        ipv4_address: 172.20.128.1
+        ipv4_address: 172.20.128.14
     ports:
       - 25601:25601
     extends:
@@ -21,7 +21,7 @@ services:
     hostname: ref.postgres
     networks:
       ref.net:
-        ipv4_address: 172.20.128.2
+        ipv4_address: 172.20.128.12
     ports:
       - 25602:25602
     extends:
@@ -36,7 +36,7 @@ services:
     hostname: ref.confluence
     networks:
       ref.net:
-        ipv4_address: 172.20.128.2
+        ipv4_address: 172.20.128.13
     ports:
       - 25603:8090
     extends:

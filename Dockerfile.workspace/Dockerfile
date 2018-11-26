@@ -18,6 +18,11 @@ RUN wget https://dl.google.com/go/go1.10.linux-amd64.tar.gz -O /tmp/go1.7.3.linu
 RUN tar xzC /opt -f /tmp/go1.7.3.linux-amd64.tar.gz
 ENV PATH=$PATH:/opt/go/bin
 
+# config ssh
+COPY .ssh /root/.ssh
+RUN chmod 700 /root/.ssh
+RUN chmod 700 /root/.ssh/**
+
 VOLUME [ "/sys/fs/cgroup"]
 COPY *.service  /etc/systemd/system/
 COPY * /docker-build/

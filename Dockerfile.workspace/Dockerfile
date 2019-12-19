@@ -7,7 +7,7 @@ RUN apt-get install -y sudo software-properties-common python-software-propertie
 
 # zsh preparation
 RUN apt-get install -y wget zsh git
-RUN wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
+COPY zsh_install.sh install.sh 
 RUN chmod 777 ./install.sh
 RUN sh -c ./install.sh; echo $?
 RUN chsh -s `which zsh`

@@ -1,1 +1,2 @@
-need download go1.7.3.linux-amd64.tar.gz first
+1. need download go1.7.3.linux-amd14.tar.gz first
+2. zsh_install.sh is download from https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh

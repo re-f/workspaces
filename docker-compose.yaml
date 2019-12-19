@@ -1,19 +1,51 @@
 version: '2'
 
 services:
-  ref-workspace:
+  workspace:
     build: ./Dockerfile.workspace
-    image: ref.workspace2
-    container_name: ref.workspace2
-    hostname: ref.workspace2
+    image: ref.workspace
+    container_name: ref.workspace
+    hostname: ref.workspace
     networks:
       ref.net:
-        ipv4_address: 172.20.128.1
+        ipv4_address: 172.20.128.14
     ports:
       - 25601:25601
     extends:
       file: common.yaml
       service: common
+
+  confluence-postgres:
+    image: blacklabelops/postgres
+    container_name: ref.postgres
+    hostname: ref.postgres
+    networks:
+      ref.net:
+        ipv4_address: 172.20.128.12
+    ports:
+      - 25602:25602
+    extends:
+      file: common.yaml
+      service: common
+    env_file:
+      - env/postgres.env
+
+  confluence:
+    image: blacklabelops/confluence
+    container_name: ref.confluence
+    hostname: ref.confluence
+    networks:
+      ref.net:
+        ipv4_address: 172.20.128.13
+    ports:
+      - 25603:8090
+    extends:
+      file: common.yaml
+      service: common
+    env_file:
+      - env/confluence.env
+    volumes:
+      - /shared/backup/confluence:/backup 
 
 networks:
   ref.net:

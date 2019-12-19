@@ -7,7 +7,7 @@ RUN apt-get install -y sudo software-properties-common python-software-propertie
 
 # zsh preparation
 RUN apt-get install -y wget zsh git
-RUN wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
+COPY zsh_install.sh install.sh 
 RUN chmod 777 ./install.sh
 RUN sh -c ./install.sh; echo $?
 RUN chsh -s `which zsh`
@@ -18,8 +18,21 @@ RUN wget https://dl.google.com/go/go1.10.linux-amd64.tar.gz -O /tmp/go1.7.3.linu
 RUN tar xzC /opt -f /tmp/go1.7.3.linux-amd64.tar.gz
 ENV PATH=$PATH:/opt/go/bin
 
+# config git
+RUN git config --global user.name "Ref" 
+RUN git config --global user.email "z.reg@outlook.com"
+
+# config ssh
+RUN mkdir /root/.ssh/
+RUN chmod 700 /root/.ssh/
+COPY ssh.config /root/.ssh/config 
+
 VOLUME [ "/sys/fs/cgroup"]
 COPY *.service  /etc/systemd/system/
+COPY init.sh /init.sh
+RUN chmod 744 /init.sh
 COPY * /docker-build/
 
-CMD ["/usr/bin/zsh"]
+
+
+ENTRYPOINT ["/init.sh"]

@@ -1,0 +1,2491 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"DO",
+				"DOCKER_IMAGE"
+			],
+			[
+				"pr",
+				"project"
+			],
+			[
+				"prj",
+				"project"
+			],
+			[
+				"doc",
+				"document\t(filter.go)"
+			],
+			[
+				"uint",
+				"uint32"
+			],
+			[
+				"umasd",
+				"umaskDir"
+			],
+			[
+				"fixu",
+				"fixUmasks\tuint32, uint32 ƒ"
+			],
+			[
+				"P",
+				"PROJECT_NAME"
+			],
+			[
+				"docker",
+				"docker-compose"
+			],
+			[
+				"VEN",
+				"VENDOR_BRANCH"
+			],
+			[
+				"check",
+				"checkout"
+			],
+			[
+				"proj",
+				"proj_name"
+			],
+			[
+				"for",
+				"for\tfor … done"
+			],
+			[
+				"ur",
+				"urman"
+			],
+			[
+				"uco",
+				"ucommon"
+			],
+			[
+				"upda",
+				"update_action_common\t(common.sh)"
+			],
+			[
+				"ucore",
+				"ucore-common"
+			],
+			[
+				"ven",
+				"vendor_tgt\t(common.sh)"
+			],
+			[
+				"v",
+				"vendor_src"
+			],
+			[
+				"vendor_",
+				"vendor_src"
+			],
+			[
+				"ve",
+				"vendor_path"
+			],
+			[
+				"C",
+				"CODE_PREFIX"
+			],
+			[
+				"tar",
+				"targets"
+			],
+			[
+				"suf",
+				"shuffle\t[]string ƒ"
+			],
+			[
+				"serv",
+				"serverId"
+			],
+			[
+				"ap",
+				"apply"
+			],
+			[
+				"fro",
+				"for\tfor range ʂ"
+			],
+			[
+				"dow",
+				"download-server\t(Dockerfile)"
+			],
+			[
+				"scri",
+				"scripts\t(Dockerfile)"
+			],
+			[
+				"rw",
+				"rw-split"
+			],
+			[
+				"bui",
+				"build_uproxy_so"
+			],
+			[
+				"pro",
+				"projects"
+			],
+			[
+				"pos",
+				"postOrDelete\tfunction"
+			],
+			[
+				"p",
+				"Println\tn int, err error ƒ"
+			],
+			[
+				"pri",
+				"println\t ƒ"
+			],
+			[
+				"print",
+				"printSrcln\t ƒ"
+			],
+			[
+				"stack",
+				"stackTrace\tstring ƒ"
+			],
+			[
+				"bash",
+				"bash_settings.sh"
+			],
+			[
+				"fmt",
+				"fmt\t package ρ"
+			],
+			[
+				"if",
+				"if\tIf Statement"
+			],
+			[
+				"env",
+				"environment"
+			],
+			[
+				"urp",
+				"uproxyNs"
+			],
+			[
+				"group",
+				"groupIds"
+			],
+			[
+				"BackupSet",
+				"BackupSetId"
+			],
+			[
+				"pre",
+				"prepareDatabaseEnvForGuardSteps\t*steps.Steps ƒ"
+			],
+			[
+				"getUniver",
+				"getUniverseOptions\t[]string ƒ"
+			],
+			[
+				"getu",
+				"getUniverseString\tstring ƒ"
+			],
+			[
+				"get",
+				"getMysqldString\tstring ƒ"
+			],
+			[
+				"ran",
+				"rand"
+			],
+			[
+				"no",
+				"Now\ttime.Time ƒ"
+			],
+			[
+				"func",
+				"func \tfunc (*TestController) with stage ʂ"
+			],
+			[
+				"pac",
+				"package controllers\t ʂ"
+			],
+			[
+				"init",
+				"init\tfunc init() ʂ"
+			],
+			[
+				"ti",
+				"time"
+			],
+			[
+				"ret",
+				"ret\treturn ʂ"
+			],
+			[
+				"er",
+				"err"
+			],
+			[
+				"del",
+				"DeleteKvTree\terror ƒ"
+			],
+			[
+				"de",
+				"DeleteKvs\terror ƒ"
+			],
+			[
+				"ucoc",
+				"ucoreClt\t package ρ"
+			],
+			[
+				"Taski",
+				"TaskId"
+			],
+			[
+				"use",
+				"transUser\tstring ν"
+			],
+			[
+				"aut",
+				"autoPath"
+			],
+			[
+				"con",
+				"constant"
+			],
+			[
+				"match",
+				"matches"
+			],
+			[
+				"backupk",
+				"backupSetKvs\tmap[string]string ν"
+			],
+			[
+				"map",
+				"MapKeysMatchSectionsUniq\t[][]string ƒ"
+			],
+			[
+				"math",
+				"matches"
+			],
+			[
+				"Ge",
+				"GetKvTree\tret map[string]string, consulIndex uint64, err error ƒ"
+			],
+			[
+				"Des",
+				"DescData"
+			],
+			[
+				"User",
+				"UserInfo\t ƒ"
+			],
+			[
+				"groupk",
+				"groupKvs"
+			],
+			[
+				"Lis",
+				"ListBackupsInput\t(urman.proto)"
+			],
+			[
+				"UMC",
+				"UMC_INST"
+			],
+			[
+				"st",
+				"struct\tstruct ʂ"
+			],
+			[
+				"key",
+				"keys"
+			],
+			[
+				"config",
+				"config-id"
+			],
+			[
+				"Cani",
+				"ManualCancelTaskInput\tstruct ʈ"
+			],
+			[
+				"Can",
+				"CancelTask"
+			],
+			[
+				"Canc",
+				"CancelForceSchedule\t*urman.CancelForceScheduleOutput, error ƒ"
+			],
+			[
+				"Ini",
+				"InitUcore\terror ƒ"
+			],
+			[
+				"stage",
+				"stage\tstage as arg ʂ"
+			],
+			[
+				"ut",
+				"util\t package ρ"
+			],
+			[
+				"ser",
+				"servers\t(database.go)"
+			],
+			[
+				"mas",
+				"masterId"
+			],
+			[
+				"kv",
+				"kvTree"
+			],
+			[
+				"Get",
+				"GetRpcConnFromPool\t(pool.go)"
+			],
+			[
+				"comp",
+				"compId\t(share.go)"
+			],
+			[
+				"a",
+				"AddStep\t*steps.Steps ƒ"
+			],
+			[
+				"full",
+				"fullCfg\tmap[string]string ν"
+			],
+			[
+				"exerciseR",
+				"exerciseResourceId"
+			],
+			[
+				"exer",
+				"exercise-resource"
+			],
+			[
+				"backup",
+				"backup-dir"
+			],
+			[
+				"don",
+				"doneTasks"
+			],
+			[
+				"sum",
+				"sumTask"
+			],
+			[
+				"tdon",
+				"tDoneInfos\tmap[string]int ν"
+			],
+			[
+				"done",
+				"tDoneInfos\tmap[string]int ν"
+			],
+			[
+				"bac",
+				"backup"
+			],
+			[
+				"No",
+				"Now\ttime.Time ƒ"
+			],
+			[
+				"kvs",
+				"kvs\tmap[string]string ν"
+			],
+			[
+				"itm",
+				"iterm"
+			],
+			[
+				"user",
+				"UserInfo\t ƒ"
+			],
+			[
+				"Sp",
+				"Sprintf\tstring ƒ"
+			],
+			[
+				"rea",
+				"real_time\t(urmanTask.js)"
+			],
+			[
+				"predi",
+				"predict_time\t(urmanTask.js)"
+			],
+			[
+				"dura",
+				"durationStr"
+			],
+			[
+				"testma",
+				"testMaps\tmap[string]string ν"
+			],
+			[
+				"tesma",
+				"testMaps\tmap[string]string ν"
+			],
+			[
+				"setup",
+				"SetupForTest\t ƒ"
+			],
+			[
+				"Err",
+				"Error\t(handler_test.go)"
+			],
+			[
+				"Er",
+				"Error\t(handler_test.go)"
+			],
+			[
+				"Ex",
+				"EXTRA_VALIDATION_ACTION_DEALY"
+			],
+			[
+				"EXT",
+				"EXTRA_VALIDATION_ACTION_DEALY"
+			],
+			[
+				"co",
+				"Contains\tbool ƒ"
+			],
+			[
+				"stat",
+				"stat\t(task.go)"
+			],
+			[
+				"cance",
+				"canceled"
+			],
+			[
+				"err",
+				"Err\terror ν"
+			],
+			[
+				"RE",
+				"RESULT_STAT_SUCCEED"
+			],
+			[
+				"S",
+				"Stat\tint32 ν"
+			],
+			[
+				"Getsta",
+				"GetRsStatNameForTest"
+			],
+			[
+				"Setex",
+				"SetExtraValidator\t ƒ"
+			],
+			[
+				"Stadon",
+				"STATUS_DONE\t Ɩ"
+			],
+			[
+				"ValidationOutput_",
+				"ValidationOutput_CANCEL"
+			],
+			[
+				"Ou",
+				"ValidationOutput_DO\t Ɩ"
+			],
+			[
+				"ucr",
+				"ucrpc\t package ρ"
+			],
+			[
+				"u",
+				"ucrpc\t(extraUtil.go)"
+			],
+			[
+				"Va",
+				"ValidationOutput_Action\tint32 ʈ"
+			],
+			[
+				"etrs",
+				"extraSrv"
+			],
+			[
+				"var",
+				"var\tvar (...) ʂ"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "common.yaml",
+			"settings":
+			{
+				"buffer_size": 301,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "docker-compose.yaml",
+			"settings":
+			{
+				"buffer_size": 1147,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "workspace.sublime-project",
+			"settings":
+			{
+				"buffer_size": 45,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/monster/Documents/confluence破解/keygen.sh",
+			"settings":
+			{
+				"buffer_size": 299,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "COPY .ssh /root/.ssh\nRUN chmod 700 /root/.ssh\nRUN chmod 700 /root/.ssh/**",
+			"settings":
+			{
+				"buffer_size": 73,
+				"line_ending": "Unix",
+				"name": "COPY .ssh /root/.ssh"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/GoSublime/GoSublime.sublime-build",
+					""
+				],
+				[
+					"Packages/User/js.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/GoSublime/GoSublime.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"copy",
+				"File: Copy Path"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"sethtm",
+				"Set Syntax: HTML"
+			],
+			[
+				"pci",
+				"Package Control: Install Package"
+			],
+			[
+				"bash",
+				"Set Syntax: Bourne Again Shell (bash)"
+			],
+			[
+				"shell",
+				"Build With: ShellScript"
+			],
+			[
+				"c",
+				"File: Copy Path"
+			],
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"setbash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"setgo",
+				"Set Syntax: Go"
+			],
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
+			[
+				"set bash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"mar",
+				"MarkdownEditing: Run markdownlint"
+			],
+			[
+				"cop",
+				"File: Copy Path"
+			],
+			[
+				"set",
+				"Set Syntax: Go"
+			],
+			[
+				"ba sh",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"cpo",
+				"File: Copy Path"
+			],
+			[
+				"syntax go",
+				"Set Syntax: Go"
+			],
+			[
+				"py",
+				"Set Syntax: Python"
+			],
+			[
+				"cam",
+				"Convert Case: camelCase"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"for",
+				"Format: Javascript"
+			],
+			[
+				"case",
+				"Convert Case: dash-case"
+			],
+			[
+				"casesn",
+				"Convert Case: snake_case"
+			],
+			[
+				"shel",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"java",
+				"Set Syntax: Java"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings"
+			],
+			[
+				"stapp",
+				"Set Syntax: AppleScript"
+			],
+			[
+				"git",
+				"GitGutter: Show Diff Popup"
+			],
+			[
+				"pki",
+				"Package Control: Install Package"
+			],
+			[
+				"gitg",
+				"GitGutter: Show Diff Popup"
+			],
+			[
+				"gitgu",
+				"GitGutter: Compare Against HEAD"
+			],
+			[
+				"peru",
+				"Permute Lines: Unique"
+			],
+			[
+				"proto",
+				"Set Syntax: Protocol Buffer"
+			],
+			[
+				"sna",
+				"Convert Case: snake_case"
+			],
+			[
+				"pckr",
+				"Package Control: Remove Package"
+			],
+			[
+				"pcre",
+				"Package Control: Remove Channel"
+			],
+			[
+				"snake",
+				"Convert Case: snake_case"
+			],
+			[
+				"snaek",
+				"Convert Case: snake_case"
+			],
+			[
+				"upper",
+				"Convert Case: Upper Case"
+			],
+			[
+				"boo",
+				"Bookmarks: Select All"
+			],
+			[
+				"book",
+				"Bookmarks: Toggle"
+			],
+			[
+				"bo",
+				"Bookmarks: Toggle"
+			],
+			[
+				"setap",
+				"Set Syntax: AppleScript"
+			],
+			[
+				"csase",
+				"Convert Case: snake_case"
+			],
+			[
+				"ke",
+				"Preferences: Key Bindings"
+			],
+			[
+				"pck",
+				"Package Control: Install Package"
+			],
+			[
+				"pcki",
+				"Package Control: Install Package"
+			],
+			[
+				"sho",
+				"GoSublime: Show errors"
+			],
+			[
+				"err",
+				"GoSublime: Show errors"
+			],
+			[
+				"test",
+				"GoSublime: Run Tests"
+			],
+			[
+				"gotest",
+				"GoSublime: Run Tests"
+			],
+			[
+				"goer",
+				"GoSublime: Show errors"
+			],
+			[
+				"go",
+				"GoSublime: Open Error Log"
+			],
+			[
+				"paci",
+				"Package Control: Install Package"
+			],
+			[
+				"pai",
+				"Package Control: Advanced Install Package"
+			],
+			[
+				"markd",
+				"Set Syntax: Markdown Extended"
+			],
+			[
+				"pcr",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 476.0
+	},
+	"console":
+	{
+		"height": 201.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/monster/Codes/ref.works",
+		"/Users/monster/Codes/ref.works/udp"
+	],
+	"file_history":
+	[
+		"/Users/monster/Codes/ref.works/udp/cncb_src_pkg.sh",
+		"/Users/monster/Codes/universe/uagent/src/vendor/github.com/spf13/cobra/command.go",
+		"/Users/monster/Codes/universe/uagent/src/uagent/main.go",
+		"/Users/monster/Codes/universe/umc/src/umc/controllers/components.go",
+		"/Users/monster/Codes/universe/uagent/src/vendor/actiontech/ucorecommon/model/model.go",
+		"/Users/monster/Codes/universe/ucore/src/ucore/glide.lock",
+		"/Users/monster/Codes/universe/uagent/src/Makefile",
+		"/Users/monster/Codes/universe/uagent/src/build/uagent.spec",
+		"/Users/monster/Downloads/README",
+		"/Users/monster/Codes/universe/umc/src/umc/controllers/screenMonitor.go",
+		"/Users/monster/Downloads/download.sh",
+		"/Users/monster/Codes/universe/umc/src/umc/controllers/ajax.go",
+		"/Users/monster/Codes/universe/umc/src/umc/controllers/filter.go",
+		"/Users/monster/Codes/universe/umc/src/umc/controllers/ushardDeploy.go",
+		"/Users/monster/Codes/universe/urds/src/urds/network/umc.go",
+		"/Users/monster/Codes/universe/uagent/src/vendor/actiontech/ucorecommon/client/common.go",
+		"/Users/monster/Codes/universe/umc/src/umc/controllers/databaseGroup_api.go",
+		"/Users/monster/Downloads/dtle场景请求数据样例.md",
+		"/Users/monster/Codes/universe/umc/src/umc/routers/router.go",
+		"/Users/monster/Codes/universe/umc/src/umc/controllers/database.go",
+		"/Users/monster/Codes/universe/urds/bin/logs/user.log",
+		"/Users/monster/Codes/universe/umc/src/umc/controllers/user.go",
+		"/Users/monster/Codes/universe/urds/src/urds/conf/batchData.json",
+		"/Users/monster/Codes/universe/umc/src/umc/conf/batchData.json",
+		"/Users/monster/Codes/universe/umc/src/umc/controllers/support.go",
+		"/Users/monster/Codes/universe/umc/src/umc/controllers/share/share.go",
+		"/Users/monster/Codes/universe/ushard/src/build/ushard.spec",
+		"/Users/monster/Codes/universe/udeploy/src/build/udeploy.spec",
+		"/Users/monster/Downloads/上汽ustats fd过多/shangqi_log_ustats/ustats.fd",
+		"/Users/monster/Documents/bookmarks_8_17_18_2.html",
+		"/Users/monster/Codes/universe/scripts/download-server/src/download/main.go",
+		"/Users/monster/Codes/universe/ucore/src/Makefile",
+		"/Users/monster/Codes/universe/uagent/src/vendor/actiontech/ucommon/build/Makefile",
+		"/Users/monster/Codes/universe/umc/src/vendor/github.com/astaxie/beego/context/input.go",
+		"/Users/monster/Codes/jilei/src/updateBartenderLicense/main.go",
+		"/Users/monster/Codes/universe/udeploy/src/Makefile",
+		"/Users/monster/.bash_user_setting",
+		"/Users/monster/Downloads/开发测试工具.md",
+		"/Users/monster/Codes/universe/universe.sublime-project",
+		"/Users/monster/Codes/universe/ustats/src/vendor/actiontech/ucommon/mysql/mysql.go",
+		"/Users/monster/Codes/universe/urman/src/manager/scheduler.go",
+		"/Users/monster/Codes/universe/udeploy/src/udeploy/handler.go",
+		"/Users/monster/Codes/universe/uagent/scripts/uagent.systemd",
+		"/Users/monster/Codes/universe/uagent/src/vendor/actiontech/uinterface/uagent/uagent.proto",
+		"/Users/monster/Codes/universe/uguard/src/test/main.go",
+		"/Users/monster/Codes/universe/uagent/src/vendor/actiontech/ucommon/os/file.go",
+		"/Users/monster/Codes/universe/uguard/src/actions/startMysql.go",
+		"/Users/monster/Codes/universe/scripts/create_gitlab_milestones.py",
+		"/Users/monster/Codes/universe/uguard/src/actions/utils.go",
+		"/Users/monster/Codes/universe/ustats/src/Makefile",
+		"/Users/monster/Codes/universe/uguard/src/actions/restartReplication.go",
+		"/Users/monster/Codes/universe/uagent/src/uagent/handler.go",
+		"/Users/monster/Codes/universe/src/actiontech/ucommon/log/stage.go",
+		"/Users/monster/Codes/universe/urman/src/persist/persistor_test.go",
+		"/Users/monster/.surge.conf.bak",
+		"/Users/monster/Library/Mobile Documents/iCloud~run~surge/Documents/mine.conf",
+		"/Users/monster/Codes/universe/src/actiontech/ucommon/util/string.go",
+		"/Users/monster/Codes/universe/urman/src/metadata/recoverTask.go",
+		"/Users/monster/Codes/universe/umc/src/umc/controllers/share/licenseVerifier.go",
+		"/Users/monster/Codes/universe/umc/src/Makefile",
+		"/Users/monster/Codes/universe/urman/src/mysql/mysql_server_core.go",
+		"/Users/monster/Codes/universe/uagent/src/uagent/handler_test.go",
+		"/Users/monster/Codes/universe/urman/src/manager/tasksOrganization.go",
+		"/Users/monster/Codes/universe/uguard/src/agent/targetService/query.go",
+		"/Users/monster/Codes/universe/urman/src/config/buildFromMap.go",
+		"/Users/monster/Codes/universe/urds/src/urds/controllers/share/database.go",
+		"/Users/monster/Codes/universe/urds/src/urds/controllers/approval.go",
+		"/Users/monster/Codes/universe/src/actiontech/ucommon/mysql/mycnf.go",
+		"/Users/monster/Codes/universe/uguard/src/actions/exclude.go",
+		"/Users/monster/Downloads/中信DMP对接API设计文档.markdown",
+		"/Users/monster/Codes/universe/uguard/src/vendor/actiontech/ucommon/mysql/mysql.go",
+		"/Users/monster/Codes/universe/umc/src/umc/controllers/database_api.go",
+		"/Users/monster/Codes/universe/ustats/src/build/ustats.spec",
+		"/Users/monster/Codes/universe/umon/src/umon/prometheus_wrapper.go",
+		"/Users/monster/Codes/universe/ucore/src/vendor/github.com/prometheus/alertmanager/config/notifiers.go",
+		"/Users/monster/Codes/universe/ucore/src/vendor/gopkg.in/gomail.v2/message.go",
+		"/Users/monster/Codes/universe/ucore/src/vendor/gopkg.in/gomail.v2/smtp.go",
+		"/Users/monster/Codes/universe/umon/src/umon/main.go",
+		"/Users/monster/Codes/universe/ucore/src/ucore/alertmanager_wrapper.go",
+		"/Users/monster/Downloads/汇聚场景测试.txt",
+		"/Users/monster/Codes/universe/udeploy/scripts/mysql_5_7.systemd",
+		"/Users/monster/Codes/universe/umc/src/umc/controllers/server.go",
+		"/Users/monster/Codes/universe/ustats/src/ustats/main.go",
+		"/Users/monster/Codes/universe/umc/src/umc/main.go",
+		"/Users/monster/Codes/universe/uguard/src/Makefile",
+		"/Users/monster/Codes/universe/umc/src/umc/controllers/index.go",
+		"/Users/monster/Codes/universe/umc/src/umc/statuspool/statuspool.go",
+		"/Users/monster/Codes/universe/ustats/src/ustats/show_metrics.go",
+		"/Users/monster/Downloads/汇聚场景测试.md",
+		"/Users/monster/Downloads/读写分离.testsuite-deep.xml",
+		"/Users/monster/Codes/universe/urds/src/urds/main.go",
+		"/Users/monster/Codes/universe/udeploy/src/udeploy/main.go",
+		"/Users/monster/Codes/universe/umon/src/umon/vendor/gopkg.in/gomail.v2/smtp_test.go",
+		"/Users/monster/Codes/universe/umon/src/umon/diagnosis_report.go",
+		"/Users/monster/Codes/universe/ustats/src/ustats/collector.go",
+		"/Users/monster/Codes/universe/ustats/src/ustats/persist.go",
+		"/Users/monster/Codes/universe/uagent/src/vendor/github.com/go-sql-driver/mysql/connection.go",
+		"/Users/monster/Codes/universe/uagent/src/vendor/actiontech/ucommon/mysql/mysql.go",
+		"/Users/monster/Codes/universe/umc/src/umc/controllers/batch_takeover.go",
+		"/Users/monster/Codes/universe/umc/src/umc/controllers/alert.go",
+		"/Users/monster/Codes/universe/umc/src/build/umc.spec",
+		"/Users/monster/Codes/universe/uagent/src/vendor/actiontech/uinterface/common/mysql.go",
+		"/Users/monster/Codes/universe/urman/src/Makefile",
+		"/Users/monster/Codes/universe/ucore/src/ucore/updateConfig.go",
+		"/Users/monster/Codes/universe/ucore/src/ucore/handler.go",
+		"/Users/monster/Codes/universe/ucore/src/vendor/actiontech/ucommon/mysql/mysql.go",
+		"/Users/monster/Downloads/fname.ext",
+		"/Users/monster/Downloads/confluence∆∆Ω‚π§æﬂ/keygen_MacOSX.sh",
+		"/Users/monster/Codes/universe/uagent/src/vendor/actiontech/ucorecommon/client/mysql.go",
+		"/Users/monster/Downloads/ucore.x86_64.rpm",
+		"/Users/monster/Downloads/10_issues.csv",
+		"/Users/monster/Downloads/10_issue.csv",
+		"/Users/monster/Codes/universe/ucore/src/vendor/github.com/prometheus/alertmanager/inhibit/inhibit.go",
+		"/Users/monster/Codes/universe/ucore/src/vendor/github.com/prometheus/alertmanager/types/match.go",
+		"/Users/monster/Codes/universe/umc/src/umc/controllers/progressController.go",
+		"/Users/monster/Codes/universe/ucore/src/vendor/github.com/julienschmidt/httprouter/router_test.go",
+		"/Users/monster/Codes/universe/uguard/src/manager/guard/groupTask.go",
+		"/Users/monster/Codes/universe/uguard/src/manager/guard/inspect.go",
+		"/Users/monster/Codes/universe/uguard/src/actions/setSemiSyncWaitSlaveCount.go",
+		"/Users/monster/Codes/universe/umon/src/umon/pinger.go",
+		"/Users/monster/Codes/universe/uagent/src/vendor/actiontech/ucommon/os/os.go",
+		"/Users/monster/Codes/universe/udeploy/src/udeploy/plugins/icbc_os.go",
+		"/Users/monster/Codes/universe/ucore/src/ucore/consulAdapter.go",
+		"/Users/monster/Codes/universe/umc/src/umc/controllers/center/opCenter.go",
+		"/Users/monster/Codes/universe/umc/src/umc/controllers/steps/steps.go",
+		"/Users/monster/Codes/universe/uagent/src/vendor/actiontech/ucommon/conf/get.go",
+		"/Users/monster/Codes/universe/umc/sftp-config.json",
+		"/Users/monster/Codes/universe/uguard/src/cluster/instance.go"
+	],
+	"find":
+	{
+		"height": 29.0
+	},
+	"find_in_files":
+	{
+		"height": 166.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"/var/go/",
+			"请",
+			"172.20.128."
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "common.yaml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 301,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								301,
+								301
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/YAML/YAML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "docker-compose.yaml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1147,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1066,
+								1066
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/YAML/YAML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "workspace.sublime-project",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 45,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								45,
+								45
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JSON (JavaScriptNext).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/monster/Documents/confluence破解/keygen.sh",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 299,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": false,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/ShellScript/Bash.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 73,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								73,
+								73
+							]
+						],
+						"settings":
+						{
+							"auto_name": "COPY .ssh /root/.ssh",
+							"default_dir": "/Users/monster/Documents/confluence破解",
+							"git_gutter_is_enabled": false,
+							"incomplete_sync": null,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 69.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.9o:///Users/monster/Codes/jilei/src/updateBartenderLicense":
+	{
+		"height": 168.0
+	},
+	"output.9o:///Users/monster/Codes/universe/uguard/src/manager/guard":
+	{
+		"height": 151.0
+	},
+	"output.9o:///Users/monster/Codes/universe/uguard/src/test":
+	{
+		"height": 168.0
+	},
+	"output.9o:///Users/monster/work/jilei/src/updateBartenderLicense":
+	{
+		"height": 291.0
+	},
+	"output.9o:///Users/monster/work/project/actiontech-ha/ha/src/nha/cluster":
+	{
+		"height": 373.0
+	},
+	"output.9o:///Users/monster/work/project/hyper":
+	{
+		"height": 162.0
+	},
+	"output.9o:///Users/monster/work/project/hyper/src/agent":
+	{
+		"height": 226.0
+	},
+	"output.9o:///Users/monster/work/project/hyper/src/hyper/os":
+	{
+		"height": 299.0
+	},
+	"output.9o:///Users/monster/work/project/hyper/src/rpc":
+	{
+		"height": 250.0
+	},
+	"output.9o:///Users/monster/work/project/hyper/src/server":
+	{
+		"height": 312.0
+	},
+	"output.9o:///Users/monster/work/project/universe":
+	{
+		"height": 499.0
+	},
+	"output.9o:///Users/monster/work/project/universe/src/actiontech/ucommon/grpc":
+	{
+		"height": 327.0
+	},
+	"output.9o:///Users/monster/work/project/universe/src/actiontech/ucommon/test":
+	{
+		"height": 346.0
+	},
+	"output.9o:///Users/monster/work/project/universe/src/actiontech/ucommon/util":
+	{
+		"height": 136.0
+	},
+	"output.9o:///Users/monster/work/project/universe/src/actiontech/uinterface/urman":
+	{
+		"height": 150.0
+	},
+	"output.9o:///Users/monster/work/project/universe/src/convertKvToMap":
+	{
+		"height": 433.0
+	},
+	"output.9o:///Users/monster/work/project/universe/ucore/src/ucore":
+	{
+		"height": 150.0
+	},
+	"output.9o:///Users/monster/work/project/universe/umc/src/umc":
+	{
+		"height": 304.0
+	},
+	"output.9o:///Users/monster/work/project/universe/umc/src/umc/controllers":
+	{
+		"height": 333.0
+	},
+	"output.9o:///Users/monster/work/project/universe/umc/src/umc/vendor/actiontech/ucommon/grpc":
+	{
+		"height": 436.0
+	},
+	"output.9o:///Users/monster/work/project/universe/umc/src/umc/vendor/actiontech/ucorecommon/client":
+	{
+		"height": 150.0
+	},
+	"output.9o:///Users/monster/work/project/universe/umc/src/umc/vendor/actiontech/uinterface/ucore":
+	{
+		"height": 150.0
+	},
+	"output.9o:///Users/monster/work/project/universe/umc/src/umc/vendor/actiontech/uinterface/urman":
+	{
+		"height": 150.0
+	},
+	"output.9o:///Users/monster/work/project/universe/urds/src/urds":
+	{
+		"height": 252.0
+	},
+	"output.9o:///Users/monster/work/project/universe/urds/src/urds/controllers":
+	{
+		"height": 156.0
+	},
+	"output.9o:///Users/monster/work/project/universe/urds/src/urds/routers":
+	{
+		"height": 156.0
+	},
+	"output.9o:///Users/monster/work/project/universe/urds/src/urds/test":
+	{
+		"height": 136.0
+	},
+	"output.9o:///Users/monster/work/project/universe/urman/src/main":
+	{
+		"height": 231.0
+	},
+	"output.9o:///Users/monster/work/project/universe/urman/src/manager":
+	{
+		"height": 308.0
+	},
+	"output.9o:///Users/monster/work/project/universe/urman/src/manager/main":
+	{
+		"height": 150.0
+	},
+	"output.9o:///Users/monster/work/project/universe/urman/src/metadata":
+	{
+		"height": 150.0
+	},
+	"output.9o:///Users/monster/work/project/universe/urman/src/persist":
+	{
+		"height": 275.0
+	},
+	"output.9o:///Users/monster/work/project/universe/ushard/src/ushard":
+	{
+		"height": 150.0
+	},
+	"output.9o:///Users/monster/work/project/uproxy/go-wrapper/src/gowrapper":
+	{
+		"height": 138.0
+	},
+	"output.9o:///Users/monster/work/project/urman":
+	{
+		"height": 150.0
+	},
+	"output.9o:///Users/monster/work/project/urman/src/actiontech/ucommon/ubootstrap":
+	{
+		"height": 112.0
+	},
+	"output.9o:///Users/monster/work/project/urman/src/actiontech/ucorecommon/client":
+	{
+		"height": 112.0
+	},
+	"output.9o:///Users/monster/work/project/urman/src/agent":
+	{
+		"height": 261.0
+	},
+	"output.9o:///Users/monster/work/project/urman/src/agent/cache":
+	{
+		"height": 100.0
+	},
+	"output.9o:///Users/monster/work/project/urman/src/agent/main":
+	{
+		"height": 182.0
+	},
+	"output.9o:///Users/monster/work/project/urman/src/config":
+	{
+		"height": 239.0
+	},
+	"output.9o:///Users/monster/work/project/urman/src/main":
+	{
+		"height": 283.0
+	},
+	"output.9o:///Users/monster/work/project/urman/src/manager":
+	{
+		"height": 368.0
+	},
+	"output.9o:///Users/monster/work/project/urman/src/manager/main":
+	{
+		"height": 200.0
+	},
+	"output.9o:///Users/monster/work/project/urman/src/metadata":
+	{
+		"height": 115.0
+	},
+	"output.9o:///Users/monster/work/project/urman/src/persist":
+	{
+		"height": 359.0
+	},
+	"output.9o:///Users/monster/work/project/urman/src/rpc":
+	{
+		"height": 186.0
+	},
+	"output.9o:///Users/monster/work/project/urman/src/testUtil":
+	{
+		"height": 335.0
+	},
+	"output.9o:///Users/monster/work/project/urman/src/ucore":
+	{
+		"height": 245.0
+	},
+	"output.9o:///Users/monster/work/project/urman/src/urman-common":
+	{
+		"height": 168.0
+	},
+	"output.9o:///Users/monster/work/project/urman/src/vendor/actiontech/ucommon/test":
+	{
+		"height": 150.0
+	},
+	"output.9o:///Users/monster/work/project/urman/src/vendor/actiontech/ucommon/ubootstrap":
+	{
+		"height": 100.0
+	},
+	"output.9o:///Users/monster/work/project/urman/src/vendor/actiontech/ucommon/util":
+	{
+		"height": 100.0
+	},
+	"output.9o:///Users/monster/work/project/urman/src/vendor/actiontech/uinterface/urman":
+	{
+		"height": 412.0
+	},
+	"output.9o:///Users/monster/work/project/urman/src/vendor/github.com/ikarishinjieva/go-gtid":
+	{
+		"height": 168.0
+	},
+	"output.GoSublime-main-output":
+	{
+		"height": 138.0
+	},
+	"output.GsDoc-output-output":
+	{
+		"height": 100.0
+	},
+	"output.MarGo-output":
+	{
+		"height": 100.0
+	},
+	"output.exec":
+	{
+		"height": 168.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 151.0
+	},
+	"pinned_build_system": "",
+	"project": "workspace.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"umcdabas",
+				"universe/umc/src/umc/controllers/database.go"
+			],
+			[
+				"database",
+				"universe/umc/src/umc/controllers/database.go"
+			],
+			[
+				"alert",
+				"universe/umc/src/umc/controllers/alert.go"
+			],
+			[
+				"make",
+				"universe/uagent/src/Makefile"
+			],
+			[
+				"",
+				"universe/uagent/src/build/uagent.spec"
+			],
+			[
+				"uagentspe",
+				"universe/uagent/src/build/uagent.spec"
+			],
+			[
+				"mak",
+				"universe/uagent/src/Makefile"
+			],
+			[
+				"ucoregli",
+				"universe/ucore/src/ucore/glide.lock"
+			],
+			[
+				"uagentmain",
+				"universe/uagent/src/uagent/main.go"
+			],
+			[
+				"screnn",
+				"universe/umc/src/umc/controllers/screenMonitor.go"
+			],
+			[
+				"makefi",
+				"universe/uagent/src/Makefile"
+			],
+			[
+				"datagroup",
+				"universe/umc/src/umc/controllers/databaseGroup_api.go"
+			],
+			[
+				"ucorecommon",
+				"universe/uagent/src/vendor/actiontech/ucorecommon/client/common.go"
+			],
+			[
+				"umc",
+				"universe/urds/src/urds/network/umc.go"
+			],
+			[
+				"umcusergo",
+				"universe/umc/src/umc/controllers/user.go"
+			],
+			[
+				"user",
+				"universe/urds/bin/logs/user.log"
+			],
+			[
+				"filter",
+				"universe/umc/src/umc/controllers/filter.go"
+			],
+			[
+				"ushardeploy",
+				"universe/umc/src/umc/controllers/ushardDeploy.go"
+			],
+			[
+				"data",
+				"universe/umc/src/umc/controllers/database.go"
+			],
+			[
+				"batchda",
+				"universe/umc/src/umc/conf/batchData.json"
+			],
+			[
+				"batchjso",
+				"universe/urds/src/urds/conf/batchData.json"
+			],
+			[
+				"/ushardDeploy.go",
+				"universe/umc/src/umc/controllers/ushardDeploy.go"
+			],
+			[
+				"router",
+				"universe/umc/src/umc/routers/router.go"
+			],
+			[
+				"uagentsp",
+				"universe/uagent/src/build/uagent.spec"
+			],
+			[
+				"udep",
+				"universe/udeploy/src/build/udeploy.spec"
+			],
+			[
+				"ushard.spec",
+				"universe/ushard/src/build/ushard.spec"
+			],
+			[
+				"uagent.spe",
+				"universe/uagent/src/build/uagent.spec"
+			],
+			[
+				"udeplosp",
+				"universe/udeploy/src/build/udeploy.spec"
+			],
+			[
+				"udepspec",
+				"universe/udeploy/src/build/udeploy.spec"
+			],
+			[
+				"udeplmake",
+				"universe/udeploy/src/Makefile"
+			],
+			[
+				"uagentmake",
+				"universe/uagent/src/Makefile"
+			],
+			[
+				"ucoremake",
+				"universe/ucore/src/Makefile"
+			],
+			[
+				"dowmain.go",
+				"universe/scripts/download-server/src/download/main.go"
+			],
+			[
+				"uagent",
+				"universe/uagent/src/build/uagent.spec"
+			],
+			[
+				"makefile",
+				"universe/uagent/src/Makefile"
+			],
+			[
+				"databas",
+				"universe/umc/src/umc/controllers/database.go"
+			],
+			[
+				"persi_te",
+				"universe/urman/src/persist/persistor_test.go"
+			],
+			[
+				"uagentsystemd",
+				"universe/uagent/scripts/uagent.systemd"
+			],
+			[
+				"udeployhand",
+				"universe/udeploy/src/udeploy/handler.go"
+			],
+			[
+				"umc/make",
+				"universe/umc/src/Makefile"
+			],
+			[
+				"testmain",
+				"universe/uguard/src/test/main.go"
+			],
+			[
+				"udepmak",
+				"universe/udeploy/src/Makefile"
+			],
+			[
+				"create",
+				"universe/scripts/create_gitlab_milestones.py"
+			],
+			[
+				"umcmake",
+				"universe/umc/src/Makefile"
+			],
+			[
+				"urmansch",
+				"universe/urman/src/manager/scheduler.go"
+			],
+			[
+				"udephand",
+				"universe/udeploy/src/udeploy/handler.go"
+			],
+			[
+				"excl",
+				"universe/uguard/src/actions/exclude.go"
+			],
+			[
+				"sharedatabase",
+				"universe/urds/src/urds/controllers/share/database.go"
+			],
+			[
+				"appr",
+				"universe/urds/src/urds/controllers/approval.go"
+			],
+			[
+				"databa",
+				"universe/umc/src/umc/controllers/database.go"
+			],
+			[
+				"uguarmys",
+				"universe/uguard/src/vendor/actiontech/ucommon/mysql/mysql.go"
+			],
+			[
+				"ustamak",
+				"universe/ustats/src/Makefile"
+			],
+			[
+				"ustat",
+				"universe/ustats/src/build/ustats.spec"
+			],
+			[
+				"ustatsmysql.go",
+				"universe/ustats/src/vendor/actiontech/ucommon/mysql/mysql.go"
+			],
+			[
+				"uguardmake",
+				"universe/uguard/src/Makefile"
+			],
+			[
+				"index.go",
+				"universe/umc/src/umc/controllers/index.go"
+			],
+			[
+				"umc/main",
+				"universe/umc/src/umc/main.go"
+			],
+			[
+				"ustatsmain",
+				"universe/ustats/src/ustats/main.go"
+			],
+			[
+				"server",
+				"universe/umc/src/umc/controllers/server.go"
+			],
+			[
+				"systemd",
+				"universe/udeploy/scripts/mysql_5_7.systemd"
+			],
+			[
+				"umonmain",
+				"universe/umon/src/umon/main.go"
+			],
+			[
+				"urdsmain.",
+				"universe/urds/src/urds/main.go"
+			],
+			[
+				"udeploymain.go",
+				"universe/udeploy/src/udeploy/main.go"
+			],
+			[
+				"umccompn",
+				"universe/umc/src/umc/controllers/components.go"
+			],
+			[
+				".spec",
+				"universe/umc/src/build/umc.spec"
+			],
+			[
+				"umcaler",
+				"universe/umc/src/umc/controllers/alert.go"
+			],
+			[
+				"batch",
+				"universe/umc/src/umc/controllers/batch_takeover.go"
+			],
+			[
+				"mysql.go",
+				"universe/uagent/src/vendor/actiontech/ucommon/mysql/mysql.go"
+			],
+			[
+				"ucoremakefile",
+				"universe/ucore/src/Makefile"
+			],
+			[
+				"udepmake",
+				"universe/udeploy/src/Makefile"
+			],
+			[
+				"updatecon",
+				"universe/ucore/src/ucore/updateConfig.go"
+			],
+			[
+				"urdsmain",
+				"universe/urds/src/urds/main.go"
+			],
+			[
+				"uagenspe",
+				"universe/uagent/src/build/uagent.spec"
+			],
+			[
+				"umc.spe",
+				"universe/umc/src/build/umc.spec"
+			],
+			[
+				"umamakefile",
+				"universe/urman/src/Makefile"
+			],
+			[
+				"actiontech/ucorecommon/client/mysql.go",
+				"universe/uagent/src/vendor/actiontech/ucorecommon/client/mysql.go"
+			],
+			[
+				"icbcgo",
+				"universe/udeploy/src/udeploy/plugins/icbc_os.go"
+			],
+			[
+				"deloyhand",
+				"universe/udeploy/src/udeploy/handler.go"
+			],
+			[
+				"ucoremain",
+				"universe/ucore/src/ucore/main.go"
+			],
+			[
+				"rout",
+				"universe/umc/src/umc/routers/router.go"
+			],
+			[
+				"rou t",
+				"universe/ucore/src/vendor/github.com/julienschmidt/httprouter/router_test.go"
+			],
+			[
+				"progre",
+				"universe/umc/src/umc/controllers/progressController.go"
+			],
+			[
+				"exclu",
+				"universe/uguard/src/actions/exclude.go"
+			],
+			[
+				"m",
+				"universe/ucore/src/Makefile"
+			],
+			[
+				"inihibit",
+				"universe/ucore/src/vendor/github.com/prometheus/alertmanager/inhibit/inhibit.go"
+			],
+			[
+				"inhibit",
+				"universe/ucore/src/vendor/github.com/prometheus/alertmanager/inhibit/inhibit.go"
+			],
+			[
+				"uagent.sp",
+				"universe/uagent/src/build/uagent.spec"
+			],
+			[
+				"ushard.go",
+				"universe/umc/src/umc/controllers/ushard.go"
+			],
+			[
+				"mycnftemp",
+				"universe/urman/src/mysql/test/linux_amd64/template/my.cnf.template"
+			],
+			[
+				"usharmain",
+				"universe/ushard/src/ushard/main.go"
+			],
+			[
+				"ushard",
+				"universe/ushard/src/build/ushard.spec"
+			],
+			[
+				"modigo",
+				"universe/umc/src/umc/controllers/databaseModifyConfig.go"
+			],
+			[
+				"database\\",
+				"universe/umc/src/umc/views/database/header.tpl"
+			],
+			[
+				"uagent.spec",
+				"universe/uagent/src/build/uagent.spec"
+			],
+			[
+				"compo",
+				"universe/umc/src/umc/controllers/components.go"
+			],
+			[
+				"udeployhandl",
+				"universe/udeploy/src/udeploy/handler.go"
+			],
+			[
+				"umcdata",
+				"universe/umc/src/umc/controllers/database.go"
+			],
+			[
+				"alertmanager",
+				"universe/ucore/src/vendor/github.com/prometheus/alertmanager/README.md"
+			],
+			[
+				"urmanmanager",
+				"universe/urman/src/manager/manager.go"
+			],
+			[
+				"gard.go",
+				"universe/uguard/src/manager/guard/guard.go"
+			],
+			[
+				"uguarmain",
+				"universe/uguard/src/manager/main.go"
+			],
+			[
+				"uagentsaf",
+				"universe/uagent/src/uagent/safer.go"
+			],
+			[
+				"exc",
+				"universe/uguard/src/actions/exclude.go"
+			],
+			[
+				"uguardhand",
+				"universe/uguard/src/agent/rpc/manager/handler/handler.go"
+			],
+			[
+				"insp",
+				"universe/uguard/src/manager/guard/inspect.go"
+			],
+			[
+				"inspe",
+				"universe/uguard/src/manager/guard/inspect.go"
+			],
+			[
+				"instance",
+				"universe/uguard/src/cluster/instance.go"
+			],
+			[
+				"prom",
+				"universe/uguard/src/actions/promote.go"
+			],
+			[
+				"promo",
+				"universe/uguard/src/actions/promote.go"
+			],
+			[
+				"promote",
+				"universe/uguard/src/actions/promote.go"
+			],
+			[
+				"unbi",
+				"universe/uguard/src/actions/unbindSip.go"
+			],
+			[
+				"ustathandl",
+				"universe/ustats/src/ustats/handler.go"
+			],
+			[
+				"ushardhandler",
+				"universe/ushard/src/ushard/handler.go"
+			],
+			[
+				"mycat",
+				"universe/ushard/src/ushard/mycat_wrapper.go"
+			],
+			[
+				"ushar",
+				"universe/umc/src/umc/controllers/ushard.go"
+			],
+			[
+				"uguardinsp",
+				"universe/uguard/src/manager/guard/inspect.go"
+			],
+			[
+				"ushard/main",
+				"universe/ushard/src/ushard/main.go"
+			],
+			[
+				"uagentsafer",
+				"universe/uagent/src/uagent/safer.go"
+			],
+			[
+				"umcmain",
+				"universe/umc/src/umc/main.go"
+			],
+			[
+				"ushardmain",
+				"universe/ushard/src/ushard/main.go"
+			],
+			[
+				"inspec",
+				"universe/uguard/src/manager/guard/inspect.go"
+			],
+			[
+				"transport.go",
+				"universe/ucore/src/vendor/google.golang.org/grpc/transport/transport.go"
+			],
+			[
+				"ucorehandler",
+				"universe/ucore/src/ucore/handler.go"
+			],
+			[
+				"t",
+				"~/Downloads/THL2.xml"
+			],
+			[
+				"thl",
+				"~/Downloads/thl.xml"
+			],
+			[
+				"comp",
+				"universe/umc/src/umc/controllers/components.go"
+			],
+			[
+				"udepl",
+				"universe/udeploy/src/build/udeploy.spec"
+			],
+			[
+				"alertmanager_wrapper.go",
+				"universe/ucore/src/ucore/alertmanager_wrapper.go"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/work/sublime_project/untitled.sublime-workspace"
+			],
+			[
+				"dha",
+				"~/work/sublime_project/dha.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 354.0,
+		"last_filter": "Exclude",
+		"selected_items":
+		[
+			[
+				"Exclude",
+				"Exclude"
+			],
+			[
+				"DisableMysqlHA",
+				"DisableMysqlHA"
+			],
+			[
+				"pushfile",
+				"PushFile"
+			],
+			[
+				"SupportController",
+				"SupportController"
+			],
+			[
+				"SetConnMaxLifetime",
+				"SetConnMaxLifetime"
+			],
+			[
+				"deployOrCheckMysql",
+				"deployOrCheckMysql"
+			],
+			[
+				"NewSetSemiSyncWaitSlaveCount",
+				"NewSetSemiSyncWaitSlaveCount"
+			],
+			[
+				"CheckAccess",
+				"checkMysqldAccess"
+			],
+			[
+				"ListInstancesSearch",
+				"ListInstancesSearch"
+			],
+			[
+				"ChangeMysqlOption",
+				"ChangeMysqlOption"
+			],
+			[
+				"DeployMysql",
+				"DeployMysql"
+			],
+			[
+				"unbind",
+				"UnbindSip"
+			],
+			[
+				"PutKvs",
+				"PutKvs"
+			],
+			[
+				"StopMysql",
+				"StopMysql"
+			],
+			[
+				"JSON",
+				"JSON"
+			],
+			[
+				"getUagentStartCommand",
+				"getUagentStartCommand"
+			],
+			[
+				"TestPutKv_ShouldSucceed",
+				"TestPutKv_ShouldSucceed"
+			],
+			[
+				"heartb",
+				"Heartbeat"
+			],
+			[
+				"GetComponentMasterIpPort",
+				"GetComponentMasterIpPort"
+			],
+			[
+				"UpdateMemLimit",
+				"UpdateMemLimit"
+			],
+			[
+				"listse",
+				"ListSearch"
+			],
+			[
+				"listin",
+				"ListInstance"
+			],
+			[
+				"ListGroupInstances",
+				"ListGroupInstances"
+			],
+			[
+				"ListGroupSearch",
+				"ListGroupSearch"
+			],
+			[
+				"startcore",
+				"startCore"
+			],
+			[
+				"withoutcom",
+				"AddBackupRuleWithoutImpactConfim_Api"
+			],
+			[
+				"checkOrChangeMysqlOption",
+				"checkOrChangeMysqlOption"
+			],
+			[
+				"aler",
+				"Alert"
+			],
+			[
+				"Alert",
+				"Alert"
+			],
+			[
+				"takeover",
+				"TakeoverMysql"
+			],
+			[
+				"CustomAbort",
+				"CustomAbort"
+			],
+			[
+				"createDbUser",
+				"createDbUser"
+			],
+			[
+				"createDbUserSteps",
+				"createDbUserSteps"
+			],
+			[
+				"createuser",
+				"createUser"
+			],
+			[
+				"LookupUidGid",
+				"LookupUidGidByUser"
+			],
+			[
+				"ushardStatus",
+				"ushardStatus"
+			],
+			[
+				"ushard",
+				"ushardStatus"
+			],
+			[
+				"DebugPause",
+				"DebugPause"
+			],
+			[
+				"forcelea",
+				"ForceLeave"
+			],
+			[
+				"leave",
+				"Leave"
+			],
+			[
+				"startver",
+				"StartVersionUpdater"
+			],
+			[
+				"InstallUmc",
+				"InstallUmc"
+			],
+			[
+				"loadfl",
+				"loadFlags"
+			],
+			[
+				"ListBackupRule",
+				"ListBackupRule"
+			],
+			[
+				"StopMysqlHaEnable",
+				"StopMysqlHaEnable"
+			],
+			[
+				"list",
+				"List"
+			],
+			[
+				"UrmanBackupsetController",
+				"UrmanBackupsetController"
+			],
+			[
+				"Reset",
+				"Reset"
+			],
+			[
+				"DisableMysqlHa_Api",
+				"DisableMysqlHa_Api"
+			],
+			[
+				"adduproy",
+				"AddUproxys"
+			],
+			[
+				"CreateMysqlUser",
+				"CreateMysqlUser"
+			],
+			[
+				"AddBackend",
+				"AddBackend"
+			],
+			[
+				"AddRouter",
+				"AddRouter"
+			],
+			[
+				"RemoveBackend",
+				"RemoveBackend"
+			],
+			[
+				"IsErrorEqual",
+				"IsErrorEqual"
+			],
+			[
+				"DeleteInstance_Api",
+				"DeleteInstance_Api"
+			],
+			[
+				"ge t bin lo g f i le s",
+				"GetBinlogFiles"
+			],
+			[
+				"ManualBackup",
+				"ManualBackup"
+			],
+			[
+				"getstatus",
+				"GetStatus"
+			],
+			[
+				"getstatu",
+				"GetStatus"
+			],
+			[
+				"newconffrom",
+				"NewConfigFromMap"
+			],
+			[
+				"LicenseController",
+				"LicenseController"
+			],
+			[
+				"rand",
+				"randId"
+			],
+			[
+				"IsHandled",
+				"IsHandled"
+			],
+			[
+				"serverDisk",
+				"serverDisk"
+			],
+			[
+				"FakeHeartbeatLoopForTest",
+				"FakeHeartbeatLoopForTest"
+			],
+			[
+				"removecli",
+				"removeClient"
+			],
+			[
+				"collectha",
+				"collectHardwareInfo"
+			],
+			[
+				"TestHandle_Run",
+				"TestHandle_Run"
+			],
+			[
+				"ApplyMycnfInput",
+				"ApplyMycnfInput"
+			],
+			[
+				"newbackupset",
+				"NewBackupSet"
+			],
+			[
+				"TestSchedule_IfBackupExceedLimt_ShouldHaveRecycleTask",
+				"TestSchedule_IfBackupExceedLimt_ShouldHaveRecycleTask"
+			],
+			[
+				"install",
+				"Install"
+			],
+			[
+				"update",
+				"Update"
+			],
+			[
+				"ismaster",
+				"IsMaster"
+			],
+			[
+				"findDoingTasks",
+				"findDoingTasks"
+			],
+			[
+				"regitou",
+				"registerMysqlToUcore"
+			],
+			[
+				"uninstall",
+				"Uninstall"
+			],
+			[
+				"Isinstall",
+				"IsInstalled"
+			],
+			[
+				"installed",
+				"installed"
+			],
+			[
+				"updatebackup",
+				"UpdateBackupUser"
+			],
+			[
+				"startde",
+				"StartDelayDetection"
+			],
+			[
+				"schrey",
+				"scheduleRecycleTask"
+			],
+			[
+				"safewr",
+				"SafeWriteFile"
+			],
+			[
+				"GracefulStop",
+				"GracefulStop"
+			],
+			[
+				"StartKeepPgrpcToComponentMaster",
+				"StartKeepPgrpcToComponentMaster"
+			],
+			[
+				"UniverseCheckIdDuplicate",
+				"UniverseCheckIdDuplicate"
+			],
+			[
+				"getconn",
+				"getConn"
+			],
+			[
+				"getcon",
+				"GetConn"
+			],
+			[
+				"TestManualCancelTask_TaskStatusWrong_Fail",
+				"TestManualCancelTask_TaskStatusWrong_Fail"
+			],
+			[
+				"ListAlterInfo",
+				"ListAlterInfo"
+			],
+			[
+				"ModifyConfigController",
+				"ModifyConfigController"
+			],
+			[
+				"CancelTask",
+				"CancelTask"
+			],
+			[
+				"ExecuteBackupTask",
+				"ExecuteBackupTask"
+			],
+			[
+				"TestGetConfig_ShouldBeNil_IfNotConfig",
+				"TestGetConfig_ShouldBeNil_IfNotConfig"
+			],
+			[
+				"calex",
+				"CallExtra"
+			],
+			[
+				"Validation",
+				"Validation"
+			],
+			[
+				"don",
+				"Done2"
+			],
+			[
+				"nafortest",
+				"GetStatusNameForTest"
+			],
+			[
+				"savetas",
+				"saveTask"
+			],
+			[
+				"savetask",
+				"SaveTask"
+			],
+			[
+				"Testmain",
+				"TestMain"
+			],
+			[
+				"testmain",
+				"TestMain"
+			],
+			[
+				"testremon",
+				"TestRemoteCancel_Connectible"
+			],
+			[
+				"Testcancetashou",
+				"TestCancelTask_ShouldCallingTaskCancelFunc"
+			],
+			[
+				"dotask",
+				"doTask"
+			],
+			[
+				"TestUpdateConfigSuccess",
+				"TestUpdateConfigSuccess"
+			],
+			[
+				"isIntersectWithDuration",
+				"IsIntersectWithDuration"
+			],
+			[
+				"TestHandle_UnknowTask_ExceedMaxDoing_ShouldSetDone",
+				"TestHandle_UnknowTask_ExceedMaxDoing_ShouldSetDone"
+			],
+			[
+				"TestListMaxConcurrentPeriod_TwoUncrossedTasks",
+				"TestListMaxConcurrentPeriod_TwoUncrossedTasks"
+			],
+			[
+				"TestSchedule_singleTransport",
+				"TestSchedule_singleTransport"
+			],
+			[
+				"TestSchedule_multiExercise",
+				"TestSchedule_multiExercise"
+			],
+			[
+				"ExerciseResource",
+				"ExerciseResource"
+			],
+			[
+				"isexec",
+				"isExceedMaxConcurrent"
+			],
+			[
+				"isTaskExceedMaxDoing",
+				"isTaskExceedMaxDoing"
+			]
+		],
+		"width": 854.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 340.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

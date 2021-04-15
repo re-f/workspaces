@@ -1,5 +1,4 @@
 version: '2'
-
 services:
   workspace:
     build: ./Dockerfile.workspace
@@ -8,45 +7,24 @@ services:
     hostname: ref.workspace
     networks:
       ref.net:
-        ipv4_address: 172.20.128.14
+        ipv4_address: 172.20.128.11
     ports:
       - 25601:25601
     extends:
       file: common.yaml
       service: common
 
-  confluence-postgres:
-    image: blacklabelops/postgres
-    container_name: ref.postgres
-    hostname: ref.postgres
-    networks:
-      ref.net:
-        ipv4_address: 172.20.128.12
-    ports:
-      - 25602:25602
+  v2ray:
+    image: teddysun/v2ray
+    container_name: ref.v2ray
+    hostname: ref.v2ray
+    network_mode: "host"
+    volumes: 
+      - /shared/.config/v2ray.config.json:/etc/v2ray/config.json
     extends:
       file: common.yaml
       service: common
-    env_file:
-      - env/postgres.env
-
-  confluence:
-    image: blacklabelops/confluence
-    container_name: ref.confluence
-    hostname: ref.confluence
-    networks:
-      ref.net:
-        ipv4_address: 172.20.128.13
-    ports:
-      - 25603:8090
-    extends:
-      file: common.yaml
-      service: common
-    env_file:
-      - env/confluence.env
-    volumes:
-      - /shared/backup/confluence:/backup 
-
+      
 networks:
   ref.net:
     driver: bridge

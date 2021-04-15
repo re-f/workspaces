@@ -1,6 +1,7 @@
 version: '2'
 services:
   common:
+      restart: always
       privileged: true
       stdin_open: true
       tty: true
@@ -13,3 +14,4 @@ services:
       working_dir: /shared
       volumes:
         - /shared:/shared
+        - /shared/.config:/root/.config

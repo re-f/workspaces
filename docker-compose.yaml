@@ -1,5 +1,20 @@
 version: '2'
 services:
+  v2ray:
+    image: teddysun/v2ray
+    container_name: ref.v2ray
+    hostname: ref.v2ray
+    networks:
+      ref.net:
+        ipv4_address: 172.20.128.12
+    ports:
+      - 8888:8888
+      - 8889:8889
+    command: [ "/usr/bin/v2ray", "-config", "/root/.config/v2ray/config.json" ]
+    extends:
+      file: common.yaml
+      service: common
+
   workspace:
     build: ./Dockerfile.workspace
     image: ref.workspace
@@ -13,17 +28,12 @@ services:
     extends:
       file: common.yaml
       service: common
+    environment:
+      - HTTPS_PROXY=172.20.128.12:8889
+      - HTTP_PROXY=172.20.128.12:8889
+      - all_proxy=socks5://172.20.128.12:8888
 
-  v2ray:
-    image: teddysun/v2ray
-    container_name: ref.v2ray
-    hostname: ref.v2ray
-    network_mode: "host"
-    volumes: 
-      - /shared/.config/v2ray.config.json:/etc/v2ray/config.json
-    extends:
-      file: common.yaml
-      service: common
+
       
 networks:
   ref.net:

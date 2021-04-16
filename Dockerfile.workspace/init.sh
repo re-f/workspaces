@@ -1,11 +1,10 @@
 #!/bin/bash
 
-CONFIG_PATH="/shared/workspaces.config"
+CONFIG_PATH="/root/.config"
 CONTAINER_ALREADY_STARTED="${CONFIG_PATH}/CONTAINER_ALREADY_STARTED_PLACEHOLDER"
 if [ ! -e $CONTAINER_ALREADY_STARTED ]; then
     touch $CONTAINER_ALREADY_STARTED
     echo "-- First container startup --"
-    # YOUR_JUST_ONCE_LOGIC_HERE
     # config git
     git config --global user.name "Ref"
     git config --global user.email "z.reg@outlook.com"

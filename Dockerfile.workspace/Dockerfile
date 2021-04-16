@@ -6,11 +6,14 @@ RUN apt-get update --fix-missing
 RUN apt-get install -y sudo software-properties-common python-software-properties apt-transport-https vim gcc make
 
 # zsh preparation
-RUN apt-get install -y wget zsh git
+RUN apt-get install -y wget zsh git curl
 COPY zsh_install.sh install.sh 
 RUN chmod 777 ./install.sh
 RUN sh -c ./install.sh; echo $?
 RUN chsh -s `which zsh`
+COPY .zshrc /root/.zshrc
+RUN sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 
 # install golang
 RUN apt-get install -y curl

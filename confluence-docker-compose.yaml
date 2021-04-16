@@ -1,0 +1,40 @@
+version: '2'
+
+services:
+    confluence-postgres:
+        image: blacklabelops/postgres
+        container_name: ref.postgres
+        hostname: ref.postgres
+        networks:
+          ref.net:
+            ipv4_address: 172.20.128.12
+        ports:
+          - 25602:25602
+        extends:
+          file: common.yaml
+          service: common
+        env_file:
+          - env/postgres.env
+    
+      confluence:
+        image: blacklabelops/confluence
+        container_name: ref.confluence
+        hostname: ref.confluence
+        networks:
+          ref.net:
+            ipv4_address: 172.20.128.13
+        ports:
+          - 25603:8090
+        extends:
+          file: common.yaml
+          service: common
+        env_file:
+          - env/confluence.env
+        volumes:
+          - /shared/backup/confluence:/backup 
+
+networks:
+    ref.net:
+        external:
+            name: ref.net
+        

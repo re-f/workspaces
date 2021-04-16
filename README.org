@@ -4,13 +4,15 @@ The development environment setting include following capacity:
 1. zsh
 2. v2ray
 * Attention
-1. all config save in /root/.config, the directory structure is
+1. all config save in /root/.config(should be a private repo), the directory structure is
+```
     /root/.config
         |- v2ray
             |- config.json
         |- zsh
             |- .zshrc
         |- ...
+```
 2. v2ray inbound ends point must listen on "0.0.0.0", Otherwise other container can't use this proxy        
     
 * TODO 问题

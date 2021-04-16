@@ -1,3 +1,4 @@
+
 * Usage
 The development environment setting include following capacity:
 1. zsh
@@ -6,7 +7,20 @@ The development environment setting include following capacity:
 1. all config save in /root/.config, the directory structure is
     /root/.config
         |- v2ray
+            |- config.json
         |- zsh
+            |- .zshrc
         |- ...
 2. v2ray inbound ends point must listen on "0.0.0.0", Otherwise other container can't use this proxy        
     
+* TODO 问题
+** 问题1
+要分成2部分：
+使用容器环境的和不使用容器环境的，比如 zsh 在 mac 本地和容器化下都会使用
+方式有
+1. 使用dropbox同步
+2. 使用git 同步：这个比较烦，每次都要git pull 和 git pus
+3. 所以使用 synology 自动连带仓库一起同步（或者只在一个地方写，
+
+** 问题2
+v2ray中inbound的listen的必须是 "0.0.0.0"

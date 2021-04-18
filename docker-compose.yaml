@@ -29,9 +29,30 @@ services:
       file: common.yaml
       service: common
     environment:
-      - HTTPS_PROXY=172.20.128.12:8889
-      - HTTP_PROXY=172.20.128.12:8889
+      - https_proxy=172.20.128.12:8889
+      - http_proxy=172.20.128.12:8889
       - all_proxy=socks5://172.20.128.12:8888
+
+  dropbox:
+    image: otherguy/dropbox
+    container_name: ref.dropbox
+    hostname: ref.dropbox
+    networks:
+      ref.net:
+        ipv4_address: 172.20.128.13
+    volumes:
+      - /root/.config/dropbox:/opt/dropbox/.dropbox
+      - /shared/Dropbox:/opt/dropbox/Dropbox
+    extends:
+      file: common.yaml
+      service: common
+    environment:
+      - all_proxy=socks5://172.20.128.12:8888    
+      - https_proxy=172.20.128.12:8889
+      - http_proxy=172.20.128.12:8889 
+      - DROPBOX_UID=0
+      - DROPBOX_GID=0
+
 
 
       

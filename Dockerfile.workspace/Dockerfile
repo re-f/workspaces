@@ -17,8 +17,8 @@ RUN sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/inst
 
 # install golang
 RUN apt-get install -y curl
-RUN wget https://dl.google.com/go/go1.10.linux-amd64.tar.gz -O /tmp/go1.7.3.linux-amd64.tar.gz 
-RUN tar xzC /opt -f /tmp/go1.7.3.linux-amd64.tar.gz
+RUN wget https://dl.google.com/go/go1.14.1.linux-amd64.tar.gz -O /tmp/go1.14.1.linux-amd64.tar.gz 
+RUN tar xzC /opt -f /tmp/go1.14.1.linux-amd64.tar.gz
 ENV PATH=$PATH:/opt/go/bin
 
 # config git

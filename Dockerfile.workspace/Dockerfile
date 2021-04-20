@@ -7,9 +7,6 @@ RUN apt-get install -y sudo software-properties-common python-software-propertie
 
 # zsh preparation
 RUN apt-get install -y wget zsh git curl
-COPY zsh_install.sh install.sh 
-RUN chmod 777 ./install.sh
-RUN sh -c ./install.sh; echo $?
 RUN chsh -s `which zsh`
 COPY .zshrc /root/.zshrc
 RUN sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -20,6 +17,7 @@ RUN apt-get install -y curl
 RUN wget https://dl.google.com/go/go1.14.1.linux-amd64.tar.gz -O /tmp/go1.14.1.linux-amd64.tar.gz 
 RUN tar xzC /opt -f /tmp/go1.14.1.linux-amd64.tar.gz
 ENV PATH=$PATH:/opt/go/bin
+ENV GOPATH=/shared/go-repo
 
 # config git
 RUN git config --global user.name "Ref" 

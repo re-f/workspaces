@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CONFIG_PATH="/root/.config"
+CONFIG_PATH="${HOME}/.config"
 CONTAINER_ALREADY_STARTED="${CONFIG_PATH}/CONTAINER_ALREADY_STARTED_PLACEHOLDER"
 if [ ! -e $CONTAINER_ALREADY_STARTED ]; then
     touch $CONTAINER_ALREADY_STARTED
@@ -11,9 +11,9 @@ if [ ! -e $CONTAINER_ALREADY_STARTED ]; then
     
     # gen ssh key
     ssh_path=${CONFIG_PATH}/.ssh
-    mkdir ${ssh_path}
+    mkdir "${ssh_path}"
 
-    chmod 700 ${ssh_path}
+    chmod 700 "${ssh_path}"
     ssh-keygen -t rsa -C "z.reg@outlook.com" -f "${ssh_path}/id_rsa" -q -N ""
 fi
 

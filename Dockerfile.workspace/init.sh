@@ -19,6 +19,7 @@ if [ ! -e "${CONTAINER_ALREADY_STARTED}" ]; then
     work_mail=$(cat "${HOME}"/.config/profile/WORK_MAIL)
     ssh-keygen -t rsa -C "${work_mail}" -f "${ssh_path}/id_rsa.company" -q -N ""
 
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-
 fi
 
 

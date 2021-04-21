@@ -8,13 +8,14 @@ RUN apt-get install -y sudo software-properties-common python-software-propertie
 # zsh preparation
 RUN apt-get install -y wget zsh git curl
 RUN chsh -s `which zsh`
+RUN curl -fsSL https://gitee.com/mirrors/oh-my-zsh/raw/master/tools/install.sh -o /tmp/install_ohmyzh.sh
+RUN chmod +x /tmp/install_ohmyzh.sh
+RUN REPO="mirrors/oh-my-zsh" REMOTE="https://gitee.com/${REPO}.git" sh -c /tmp/install_ohmyzh.sh
 COPY .zshrc /root/.zshrc
-RUN sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
 
 # install golang
 RUN apt-get install -y curl
-RUN wget https://dl.google.com/go/go1.14.1.linux-amd64.tar.gz -O /tmp/go1.14.1.linux-amd64.tar.gz 
+RUN curl -fsSL https://dl.google.com/go/go1.14.1.linux-amd64.tar.gz -o /tmp/go1.14.1.linux-amd64.tar.gz 
 RUN tar xzC /opt -f /tmp/go1.14.1.linux-amd64.tar.gz
 ENV PATH=$PATH:/opt/go/bin
 ENV GOPATH=/shared/go-repo
@@ -29,7 +30,5 @@ COPY *.service  /etc/systemd/system/
 COPY init.sh /init.sh
 RUN chmod 744 /init.sh
 COPY * /docker-build/
-
-
 
 ENTRYPOINT ["/init.sh"]

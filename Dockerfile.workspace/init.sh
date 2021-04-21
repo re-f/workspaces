@@ -20,6 +20,16 @@ if [ ! -e "${CONTAINER_ALREADY_STARTED}" ]; then
     ssh-keygen -t rsa -C "${work_mail}" -f "${ssh_path}/id_rsa.company" -q -N ""
 
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-
+    go get github.com/uudashr/gopkgs/v2/cmd/gopkgs
+    go get github.com/ramya-rao-a/go-outline
+    go get github.com/cweill/gotests/gotests
+    go get github.com/fatih/gomodifytags
+    go get github.com/josharian/impl
+    go get github.com/haya14busa/goplay/cmd/goplay
+    go get github.com/go-delve/delve/cmd/dlv
+    go get github.com/go-delve/delve/cmd/dlv@master
+    go get honnef.co/go/tools/cmd/staticcheck
+    go get golang.org/x/tools/gopls
 fi
 
 

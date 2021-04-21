@@ -4,6 +4,7 @@ The development environment setting include following capacity:
 1. zsh
 2. v2ray
 3. Dropbox
+4. go
 * Attention
 1. all config save in /root/.config(should be a private repo), the directory structure is
 #+begin_src

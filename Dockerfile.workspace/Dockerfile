@@ -19,10 +19,6 @@ RUN tar xzC /opt -f /tmp/go1.14.1.linux-amd64.tar.gz
 ENV PATH=$PATH:/opt/go/bin
 ENV GOPATH=/shared/go-repo
 
-# config git
-RUN git config --global user.name "Ref" 
-RUN git config --global user.email "z.reg@outlook.com"
-
 # config ssh
 RUN mkdir /root/.ssh/
 RUN chmod 700 /root/.ssh/

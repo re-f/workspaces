@@ -41,7 +41,7 @@ services:
       ref.net:
         ipv4_address: 172.20.128.13
     volumes:
-      - /root/.config/dropbox:/opt/dropbox/.dropbox
+      - ~/.config/dropbox:/opt/dropbox/.dropbox
       - /shared/Dropbox:/opt/dropbox/Dropbox
     extends:
       file: common.yaml

@@ -6,9 +6,9 @@ The development environment setting include following capacity:
 3. Dropbox
 4. go
 * Attention
-1. all config save in /root/.config(should be a private repo), the directory structure is
+1. all config save in ~/.config(should be a private repo), the directory structure is
 #+begin_src
-    /root/.config
+    ~/.config
         |- v2ray
             |- config.json
         |- zsh
@@ -20,3 +20,7 @@ The development environment setting include following capacity:
 3. how to config Dropbox 
     - config proxy: ~docker exec -it ref.dropbox gosu dropbox dropbox proxy manual socks5 172.20.128.12 8888~
     - exclude directory: ~docker exec -it  ref.dropbox gosu dropbox dropbox exclude add /opt/dropbox/Dropbox/${your_exclude_dir}/~
+
+
+* TODO 
+- [ ] [[https://github.com/skywind3000/z.lua][z.lua]]

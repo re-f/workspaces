@@ -4,7 +4,7 @@
 			"path": "."
 		},
 		{
-			"path": "/root/.config"
+			"path": "~/.config"
 		}
 	],
 	"settings": {}

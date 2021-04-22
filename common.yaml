@@ -14,4 +14,4 @@ services:
       working_dir: /shared
       volumes:
         - /shared:/shared
-        - /root/.config:/root/.config
+        - ~/.config:/root/.config

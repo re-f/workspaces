@@ -13,6 +13,15 @@ RUN chmod +x /tmp/install_ohmyzh.sh
 RUN REPO="mirrors/oh-my-zsh" REMOTE="https://gitee.com/${REPO}.git" sh -c /tmp/install_ohmyzh.sh
 COPY .zshrc /root/.zshrc
 
+# install zsh plugin: z.lua, zsh-autosuggestions
+RUN apt-get install -y libreadline-dev
+RUN curl -R -O http://www.lua.org/ftp/lua-5.3.5.tar.gz
+RUN tar zxf lua-5.3.5.tar.gz
+RUN cd lua-5.3.5 && make linux test && make install
+RUN git clone https://gitee.com/mirrors/z.lua.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/z.lua
+RUN git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+
 # install golang
 RUN apt-get install -y curl
 RUN curl -fsSL https://dl.google.com/go/go1.14.1.linux-amd64.tar.gz -o /tmp/go1.14.1.linux-amd64.tar.gz 

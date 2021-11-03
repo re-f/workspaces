@@ -1,16 +1,18 @@
 version: '2'
 services:
   v2ray:
-    image: teddysun/v2ray
+    image: ref0/v2fly:v1
     container_name: ref.v2ray
     hostname: ref.v2ray
+    command: "${V2RAY_SUBSCR_URL}"
+    ports:
+      # socks
+      - "8888:8888"
+      # http
+      - "8889:8889"
     networks:
       ref.net:
         ipv4_address: 172.20.128.12
-    ports:
-      - 8888:8888
-      - 8889:8889
-    command: [ "/usr/bin/v2ray", "-config", "/root/.config/v2ray/config.json" ]
     extends:
       file: common.yaml
       service: common

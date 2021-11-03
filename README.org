@@ -1,14 +1,18 @@
 
-* Usage
+* About
+
 The development environment setting include following capacity:
 1. zsh
 2. v2ray
 3. Dropbox
 4. go
-* Attention
-1. all config save in ~/.config(should be a private repo), the directory structure is
+
+* Usage
+
+1. put all your config in ~/.config(should be a private repo), the directory structure show like following
 #+begin_src
     ~/.config
+        |- ssh
         |- v2ray
             |- config.json
         |- zsh
@@ -16,10 +20,14 @@ The development environment setting include following capacity:
         |- dropbox
         |- ...
 #+end_src
+2. exec: =V2RAY_SUBSCR_URL=https://doubledou.win/link/twtxZ7GTqn3WW7Sj?client=v2 docker-compose up --build -d=
+
+* Attention
+1. recommand to use [[https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html][XDG Base Directory Specification]] to organize your ~/.config directory
 2. v2ray inbound ends point must listen on "0.0.0.0", Otherwise other container can't use this proxy        
 3. how to config Dropbox 
-    - config proxy: ~docker exec -it ref.dropbox gosu dropbox dropbox proxy manual socks5 172.20.128.12 8888~
-    - exclude directory: ~docker exec -it  ref.dropbox gosu dropbox dropbox exclude add /opt/dropbox/Dropbox/${your_exclude_dir}/~
+    - config proxy: =docker exec -it ref.dropbox gosu dropbox dropbox proxy manual socks5 172.20.128.12 8888=
+    - exclude directory: =docker exec -it  ref.dropbox gosu dropbox dropbox exclude add /opt/dropbox/Dropbox/${your_exclude_dir}/=
 
 
 * TODO 

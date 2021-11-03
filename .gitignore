@@ -1,2 +1,4 @@
 Dockerfile.workspace/.DS_Store
 .DS_Store
+
+env/profile.env

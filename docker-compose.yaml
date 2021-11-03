@@ -31,9 +31,11 @@ services:
       file: common.yaml
       service: common
     environment:
-      - https_proxy=172.20.128.12:8889
-      - http_proxy=172.20.128.12:8889
+      - https_proxy=http://172.20.128.12:8889
+      - http_proxy=http://172.20.128.12:8889
       - all_proxy=socks5://172.20.128.12:8888
+    env_file:
+      - env/profile.env
 
   dropbox:
     image: otherguy/dropbox
@@ -50,8 +52,8 @@ services:
       service: common
     environment:
       - all_proxy=socks5://172.20.128.12:8888    
-      - https_proxy=172.20.128.12:8889
-      - http_proxy=172.20.128.12:8889 
+      - https_proxy=http://172.20.128.12:8889
+      - http_proxy=http://172.20.128.12:8889 
       - DROPBOX_UID=0
       - DROPBOX_GID=0
 

@@ -19,7 +19,7 @@ RUN curl -R -O http://www.lua.org/ftp/lua-5.3.5.tar.gz
 RUN tar zxf lua-5.3.5.tar.gz
 RUN cd lua-5.3.5 && make linux test && make install
 RUN git clone https://gitee.com/mirrors/z.lua.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/z.lua
-RUN git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+# RUN git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 
 # install golang

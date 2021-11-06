@@ -32,3 +32,6 @@ The development environment setting include following capacity:
 
 * TODO 
 - [ ] [[https://github.com/skywind3000/z.lua][z.lua]]
+
+* Attention2: the Fxxk GFW
+如果在容器内下载go的开发工具提示 “: TLS handshake timeout”，请在宿主机外手动执行 Dockerfile.wokrspace/init.sh 中 “# download go devel tools”，参考 https://github.com/goproxy/goproxy.cn/issues/26

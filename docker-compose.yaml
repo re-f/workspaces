@@ -1,18 +1,28 @@
 version: '2'
 services:
-  v2ray:
-    image: ref0/v2fly:v1
-    container_name: ref.v2ray
-    hostname: ref.v2ray
-    command: "${V2RAY_SUBSCR_URL}"
+  clash:
+    # reference: https://github.com/Dreamacro/clash/wiki/Running-Clash-as-a-service#docker
+    # show status in web: http://clash.razord.top/#/connections
+    # ghcr.io/dreamacro/clash
+    # ghcr.io/dreamacro/clash-premium
+    # dreamacro/clash
+    # dreamacro/clash-premium
+    image: dreamacro/clash
+    container_name: ref.clash
     ports:
-      # socks
-      - "8888:8888"
-      # http
-      - "8889:8889"
+      - "7890:7890"
+      - "7891:7891"
+      - "9090:9090"
     networks:
       ref.net:
-        ipv4_address: 172.20.128.12
+        ipv4_address: 172.20.128.12  
+      # - "9090:9090" # external controller (Restful API)
+    # TUN
+    # cap_add:
+    #   - NET_ADMIN
+    # devices:
+    #   - /dev/net/tun
+    restart: unless-stopped
     extends:
       file: common.yaml
       service: common
@@ -31,9 +41,9 @@ services:
       file: common.yaml
       service: common
     environment:
-      - https_proxy=http://172.20.128.12:8889
-      - http_proxy=http://172.20.128.12:8889
-      - all_proxy=socks5://172.20.128.12:8888
+      - https_proxy=http://172.20.128.12:7890
+      - http_proxy=http://172.20.128.12:7890
+      - all_proxy=socks5://172.20.128.12:7890
     env_file:
       - env/profile.env
 
@@ -51,13 +61,11 @@ services:
       file: common.yaml
       service: common
     environment:
-      - all_proxy=socks5://172.20.128.12:8888    
-      - https_proxy=http://172.20.128.12:8889
-      - http_proxy=http://172.20.128.12:8889 
+      - all_proxy=socks5://172.20.128.12:7890    
+      - https_proxy=http://172.20.128.12:7890
+      - http_proxy=http://172.20.128.12:7890 
       - DROPBOX_UID=0
       - DROPBOX_GID=0
-
-
 
       
 networks:

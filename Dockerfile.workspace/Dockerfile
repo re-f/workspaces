@@ -1,9 +1,9 @@
 # docker file
-FROM ubuntu:16.04
+FROM ubuntu:20.04
 
 # prepare apt for `add-apt-repository` command
 RUN apt-get update --fix-missing
-RUN apt-get install -y sudo software-properties-common python-software-properties apt-transport-https vim gcc make
+RUN apt-get install -y sudo software-properties-common  apt-transport-https vim gcc make
 
 # zsh preparation
 RUN apt-get install -y wget zsh git curl
@@ -33,6 +33,12 @@ ENV GOPATH=/shared/go-repo
 RUN mkdir /root/.ssh/
 RUN chmod 700 /root/.ssh/
 COPY ssh.config /root/.ssh/config 
+
+# install emacs28
+RUN add-apt-repository ppa:kelleyk/emacs
+RUN apt-get update --fix-missing
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get install -y emacs28
 
 VOLUME [ "/sys/fs/cgroup"]
 COPY *.service  /etc/systemd/system/

@@ -3,14 +3,14 @@
 CONFIG_PATH="${HOME}/.config"
 CONTAINER_ALREADY_STARTED="${CONFIG_PATH}/CONTAINER_ALREADY_STARTED_PLACEHOLDER"
 if [ ! -e "${CONTAINER_ALREADY_STARTED}" ]; then
-    echo "-- First container startup --"
-    echo "# config git"
+    echo "-- First time container startup --"
 
+    echo "### config git"
     if [ ! -e "${CONFIG_PATH}/git/config" ]; then
         git config --global user.name "${name}"
         git config --global user.email "${personal_mail}"
     else
-        echo "# ${CONFIG_PATH}/git/config exist ignored config git"
+        echo "# Ignored: ${CONFIG_PATH}/git/config already exist"
     fi
 
     echo "# check profile"
@@ -18,6 +18,7 @@ if [ ! -e "${CONTAINER_ALREADY_STARTED}" ]; then
         echo "\${name} is empty, please fill in it in env/profile"
     fi
 
+    echo "### config ssh"
     ssh_path=${CONFIG_PATH}/ssh
     if [ ! -e "${ssh_path}" ]; then
         echo "# gen ssh key"
@@ -32,10 +33,10 @@ if [ ! -e "${CONTAINER_ALREADY_STARTED}" ]; then
         echo "# ${ssh_path} exist ignored config ssh"
     fi
 
-    echo "# download oh-my-zsh"
+    echo "### download oh-my-zsh"
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-
 
-    echo "# download go devel tools"
+    echo "### download go devel tools"
     go env -w GO111MODULE=on
     go get -x github.com/josharian/impl@latest
     go get -x github.com/uudashr/gopkgs/v2/cmd/gopkgs@latest
@@ -47,7 +48,15 @@ if [ ! -e "${CONTAINER_ALREADY_STARTED}" ]; then
     go get -x golang.org/x/tools/gopls@latest
     go get -x github.com/rogpeppe/godef@latest
 
-    echo "-- First container startup end--"
+    echo "### config emacs"
+    emacs_path=${CONFIG_PATH}/.emacs.d
+    if [ -e "${emacs_path}" ]; then
+        ln -s ${emacs_path} ~/.emacs.d
+    else
+        echo "# Ignored: ${emacs_path} not exist"
+    fi
+
+    echo "-- First time container startup end at `date`--"
     touch "${CONTAINER_ALREADY_STARTED}"
 fi
 

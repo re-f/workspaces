@@ -1,12 +1,29 @@
-version: '2'
+
+
+x-common-configuration: &common-configuration
+  restart: always
+  privileged: true
+  stdin_open: true
+  tty: true
+  extra_hosts:
+    - "docker-registry:10.186.18.20"
+  cap_add:
+    - ALL
+  security_opt:
+    - seccomp:unconfined
+  working_dir: /shared
+  volumes:
+    - /shared:/shared
+    - ~/.config:/root/.config
+
+x-proxy-environment: &proxy-environment
+  https_proxy: http://172.20.128.12:7890
+  http_proxy: http://172.20.128.12:7890
+  all_proxy: socks5://172.20.128.12:7890
+
 services:
   clash:
-    # reference: https://github.com/Dreamacro/clash/wiki/Running-Clash-as-a-service#docker
-    # show status in web: http://clash.razord.top/#/connections
-    # ghcr.io/dreamacro/clash
-    # ghcr.io/dreamacro/clash-premium
-    # dreamacro/clash
-    # dreamacro/clash-premium
+    <<: *common-configuration
     image: dreamacro/clash
     container_name: ref.clash
     ports:
@@ -15,39 +32,26 @@ services:
       - "9090:9090"
     networks:
       ref.net:
-        ipv4_address: 172.20.128.12  
-      # - "9090:9090" # external controller (Restful API)
-    # TUN
-    # cap_add:
-    #   - NET_ADMIN
-    # devices:
-    #   - /dev/net/tun
-    restart: unless-stopped
-    extends:
-      file: common.yaml
-      service: common
+        ipv4_address: 172.20.128.12
 
   workspace:
+    <<: *common-configuration
+    image: ref.workspace:v2
     build: ./Dockerfile.workspace
-    image: ref.workspace
     container_name: ref.workspace
     hostname: ref.workspace
     networks:
       ref.net:
         ipv4_address: 172.20.128.11
     ports:
-      - 25601:25601
-    extends:
-      file: common.yaml
-      service: common
+      - "25601:25601"
     environment:
-      - https_proxy=http://172.20.128.12:7890
-      - http_proxy=http://172.20.128.12:7890
-      - all_proxy=socks5://172.20.128.12:7890
+      <<: *proxy-environment
     env_file:
       - env/profile.env
 
   dropbox:
+    <<: *common-configuration
     image: otherguy/dropbox
     container_name: ref.dropbox
     hostname: ref.dropbox
@@ -57,23 +61,15 @@ services:
     volumes:
       - ~/.config/dropbox:/opt/dropbox/.dropbox
       - /shared/Dropbox:/opt/dropbox/Dropbox
-    extends:
-      file: common.yaml
-      service: common
     environment:
-      - all_proxy=socks5://172.20.128.12:7890    
-      - https_proxy=http://172.20.128.12:7890
-      - http_proxy=http://172.20.128.12:7890 
-      - DROPBOX_UID=0
-      - DROPBOX_GID=0
+      <<: *proxy-environment
+      DROPBOX_UID: 0
+      DROPBOX_GID: 0
 
-      
 networks:
   ref.net:
     driver: bridge
     ipam:
-      driver: default
       config:
         - subnet: 172.20.128.0/24
           gateway: 172.20.128.254
-

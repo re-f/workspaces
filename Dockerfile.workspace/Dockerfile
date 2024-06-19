@@ -15,9 +15,9 @@ COPY .zshrc /root/.zshrc
 
 # install zsh plugin: z.lua, zsh-autosuggestions
 RUN apt-get install -y libreadline-dev
-RUN curl -R -O http://www.lua.org/ftp/lua-5.3.5.tar.gz
-RUN tar zxf lua-5.3.5.tar.gz
-RUN cd lua-5.3.5 && make linux test && make install
+RUN curl -R -O https://www.lua.org/ftp/lua-5.3.6.tar.gz
+RUN tar zxf lua-5.3.6.tar.gz
+RUN cd lua-5.3.6 && make linux test && make install
 RUN git clone https://gitee.com/mirrors/z.lua.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/z.lua
 # RUN git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
@@ -38,7 +38,7 @@ COPY ssh.config /root/.ssh/config
 RUN add-apt-repository ppa:kelleyk/emacs
 RUN apt-get update --fix-missing
 ENV DEBIAN_FRONTEND=noninteractive
-RUN apt-get install -y emacs28
+RUN apt-get install -y emacs
 
 VOLUME [ "/sys/fs/cgroup"]
 COPY *.service  /etc/systemd/system/

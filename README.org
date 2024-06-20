@@ -6,11 +6,12 @@ The development environment setting include following capacity:
 2. clash(trojan client)
 3. Dropbox
 4. go
-5. emacs28
+5. emacs
 
 * Usage
 
-1. put all your config in ~/.config(should be a private repo), the directory structure show like following
+1. Place all your configurations in `~/.config` (this should be a private repository). The directory structure should look like the following:
+
 #+begin_src
     ~/.config
         |- ssh
@@ -21,12 +22,20 @@ The development environment setting include following capacity:
         |- dropbox
         |- ...
 #+end_src
-2. =docker-compose up --build -d=
+
+2. start up 
+
+    =docker-compose up --build -d=
+
+3. If you want to use a VPN on your host, configure the following environment variables:
+
+    export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890  all_proxy=socks5://127.0.0.1:7891
 
 * Attention
-1. recommand to use [[https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html][XDG Base Directory Specification]] to organize your ~/.config directory
-2. v2ray inbound ends point must listen on "0.0.0.0", Otherwise other container can't use this proxy        
+1. Please use the [[https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html][XDG Base Directory Specification]] to organize your configuration files in the ~/.config directory.
+2. VPN inbound ends point must listen on "0.0.0.0", Otherwise other container can't use this proxy        
 3. how to config Dropbox 
+
     - config proxy: =docker exec -it ref.dropbox gosu dropbox dropbox proxy manual socks5 172.20.128.12 8888=
     - exclude directory: =docker exec -it  ref.dropbox gosu dropbox dropbox exclude add /opt/dropbox/Dropbox/${your_exclude_dir}/=
 
@@ -35,4 +44,6 @@ The development environment setting include following capacity:
 - [ ] [[https://github.com/skywind3000/z.lua][z.lua]]
 
 * Attention2: the Fxxk GFW
-如果在容器内下载go的开发工具提示 “: TLS handshake timeout”，请在宿主机外手动执行 Dockerfile.wokrspace/init.sh 中 “# download go devel tools”，参考 https://github.com/goproxy/goproxy.cn/issues/26
+
+If you encounter the "TLS handshake timeout" error while downloading Go development tools inside a container, please manually execute the # download go devel tools section in Dockerfile.workspace/init.sh outside the host. Refer to https://github.com/goproxy/goproxy.cn/issues/26 for more information.
+

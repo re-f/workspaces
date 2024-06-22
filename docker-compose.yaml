@@ -1,4 +1,4 @@
-
+version: '3.8'
 
 x-common-configuration: &common-configuration
   restart: always
@@ -15,6 +15,8 @@ x-common-configuration: &common-configuration
   volumes:
     - /shared:/shared
     - ~/.config:/root/.config
+  env_file:
+    - env/xdg.env      
 
 x-proxy-environment: &proxy-environment
   https_proxy: http://172.20.128.12:7890
@@ -33,10 +35,12 @@ services:
     networks:
       ref.net:
         ipv4_address: 172.20.128.12
+    environment:
+      ZDOTDIR: ${XDG_CONFIG_HOME}/zsh
 
   workspace:
     <<: *common-configuration
-    image: ref.workspace:v2
+    image: ref.workspace
     build: ./Dockerfile.workspace
     container_name: ref.workspace
     hostname: ref.workspace
@@ -45,6 +49,7 @@ services:
         ipv4_address: 172.20.128.11
     ports:
       - "25601:25601"
+      - "7779:7779"
     environment:
       <<: *proxy-environment
     env_file:
@@ -65,6 +70,7 @@ services:
       <<: *proxy-environment
       DROPBOX_UID: 0
       DROPBOX_GID: 0
+      
 
 networks:
   ref.net:
